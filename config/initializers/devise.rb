@@ -4,8 +4,9 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'f80c019f83a0b678129294e184db59ccac44283b7589a1e9b860dff9415fa09d3398dd19c2f5fcd67de6c1f7da4c963e4fec951c78da4830b27bce9c24792c50'
+   #config.secret_key = 'f80c019f83a0b678129294e184db59ccac44283b7589a1e9b860dff9415fa09d3398dd19c2f5fcd67de6c1f7da4c963e4fec951c78da4830b27bce9c24792c50'
 
+ config.secret_key = 'dd101c5cb8eb240564ffa1aaaf402105adb670758e5614a3738ea22ad6a6243067741729d9396c904e66c3985ed13fe6e1c02214f95ba2ffb3501372f9608ea5'
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
@@ -47,6 +48,7 @@ Devise.setup do |config|
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
   config.strip_whitespace_keys = [ :email ]
+
 
   # Tell if authentication through request.params is enabled. True by default.
   # It can be set to an array that will enable params authentication only for the
