@@ -13,12 +13,14 @@ gem 'haml', '~> 4.0.5'
 gem 'simple_form', '~> 3.0.2'
 gem 'devise', '~> 3.4.1'
 
-group :development do
-	#gem 'sqlite3'
-end
+
 
 group :production do
 	gem 'pg'
+end
+
+group :development do
+	gem 'sqlite3'
 end
 
 ruby "2.3.3"
